@@ -181,7 +181,7 @@ public class GDActivity extends Activity implements Runnable {
 		if (true) {
 			gameView = new GameView(this);
 
-			getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+			//getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 			scrollView = new ObservableScrollView(this);
 			scrollView.setBackgroundColor(0x15ffffff);

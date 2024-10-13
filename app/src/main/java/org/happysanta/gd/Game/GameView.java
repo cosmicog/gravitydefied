@@ -239,6 +239,7 @@ public class GameView extends View {
 		Paint paint = null;
 		if (!isSDK11OrHigher()) {
 			paint = new Paint();
+			paint.setColor(0xff00ffff);
 			paint.setFlags(Paint.DITHER_FLAG);
 			paint.setFilterBitmap(true);
 		}
@@ -423,7 +424,7 @@ public class GameView extends View {
 		int j = m_abI / 2;
 		int k = m_dI + 40;
 		// m_CGraphics.setColor(150, 0, 0);
-		paint.setColor(0xFF00FF00);
+		paint.setColor(0xFF00FFFF);
 		int i1;
 		paint.setStyle(Paint.Style.STROKE);
 		if (m_aiI != 0 || m_agI != 0) {
@@ -437,15 +438,18 @@ public class GameView extends View {
 		paint.setColor(0xFFFFFFFF);
 		canvas.drawArc(new RectF(j - byte0, k - byte0, 2 * byte0 + j - byte0, 2 * byte0 + k - byte0), 0, 360, true, paint);
 		byte0 = 2;
+		paint.setColor(0xFFFF00FF);
 		canvas.drawArc(new RectF(j - byte0, k - byte0, 2 * byte0 + j - byte0, 2 * byte0 + k - byte0), 0, 360, true, paint);
 		paint.setStyle(Paint.Style.FILL);
 	}
 
 	public void _aIIIV(int j, int k, int l, int i1) {
+		//paint.setColor(0xff00ffff);
 		canvas.drawLine(offsetX(j), offsetY(k), offsetX(l), offsetY(i1), paint);
 	}
 
 	public void drawLine(int j, int k, int l, int i1) {
+		paint.setColor(0xFF008888);
 		canvas.drawLine(offsetX((j << 2) / (float) 0xFFFF), offsetY((k << 2) / (float) 0xFFFF), offsetX((l << 2) / (float) 0xFFFF), offsetY((i1 << 2) / (float) 0xFFFF), paint);
 	}
 
@@ -495,6 +499,7 @@ public class GameView extends View {
 		if ((i1 = -(int) (((long) (int) ((long) i1 * 0xb40000L >> 16) << 32) / 0x3243fL >> 16)) < 0)
 			i1 += 360;
 		paint.setStyle(Paint.Style.STROKE);
+		paint.setColor(0xff00ffff);
 		canvas.drawArc(new RectF(j1, k1, j1 + l1, k1 + l1), -((i1 >> 16) + 170), -90, false, paint);
 		paint.setStyle(Paint.Style.FILL);
 	}
@@ -506,6 +511,7 @@ public class GameView extends View {
 		float k1 = offsetY(k + i1);
 
 		paint.setStyle(Paint.Style.STROKE);
+		paint.setColor(0xff00ffff);
 		canvas.drawArc(new RectF(j1, k1, j1 + l, k1 + l), 0, 360, true, paint);
 		paint.setStyle(Paint.Style.FILL);
 	}
@@ -513,6 +519,7 @@ public class GameView extends View {
 	public void _forIIIV(int j, int k, int l, int i1) {
 		float j1 = offsetX(j);
 		float k1 = offsetY(k);
+		paint.setColor(0xff00ffff);
 		canvas.drawRect(j1, k1, j1 + l, k1 + i1, paint);
 	}
 
