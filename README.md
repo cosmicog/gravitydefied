@@ -1,3 +1,10 @@
+## (Converted to amoled friendly Dark Mode)
+- Also converted to Gradle
+- Changed the default levels.mrg to the Pro version (100/100/100 hardcore tracks)
+![Screenshot_20241013_081537_Gravity Defied](https://github.com/user-attachments/assets/2ef6ca1f-09e4-464d-81c2-82ad4ab80630)
+
+
+
 # Gravity Defied – Android port
 **Gravity Defied** is an iconic trial racing mobile game. It was originally developed by Codebrew Software in 2004 for J2ME platform.
 
